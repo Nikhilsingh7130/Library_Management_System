@@ -1,0 +1,147 @@
+/* style.css - Centralized Styling for LMS */
+
+/* --- 1. Global Reset and Corporate Base --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+    background-color: #f5f7fa; /* Very light gray/off-white background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- 2. Header and Navigation Bar (Deep Blue Primary Color) --- */
+.primary-header {
+    background-color: #004c99; /* Deep Corporate Blue */
+    color: white;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.primary-header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+.primary-header p {
+    font-size: 1.1em;
+}
+
+/* --- 3. Content Containers and Layout --- */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Minimal flat shadow */
+    margin-bottom: 20px;
+}
+.grid-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.grid-item h3 {
+    color: #004c99; /* Deep Blue Heading */
+    margin-top: 0;
+}
+
+/* --- 4. Forms and Input Fields (Flat Design) --- */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007bff; /* Focus state highlight */
+}
+
+/* --- 5. Buttons (Solid Color Blocks) --- */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+.btn-primary {
+    background-color: #007bff; /* Standard Blue */
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.btn-success {
+    background-color: #28a745; /* Green for positive actions (e.g., Add) */
+}
+.btn-success:hover {
+    background-color: #1e7e34;
+}
+.btn-danger {
+    background-color: #dc3545; /* Red for destructive actions (e.g., Delete/Logout) */
+}
+.btn-danger:hover {
+    background-color: #c82333;
+}
+.btn-warning {
+    background-color: #ffc107;
+    color: #333; /* Dark text on light background */
+}
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+/* --- 6. Tables (Clean and Structured) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95em;
+}
+table th {
+    background-color: #004c99; /* Deep Blue Header */
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #004c99;
+}
+table td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* --- 7. Login/Error Box Specifics --- */
+.login-box {
+    width: 350px;
+    margin: 80px auto 0; /* Centering and top margin */
+}
+.error-message {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.logout-link {
+    font-size: 1.1em;
+    color: #dc3545;
+    margin-top: 30px;
+    display: block;
+}
